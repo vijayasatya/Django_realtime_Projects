@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//WAPFORUM//DTD XHTML Mobile 1.0//EN'
+'http://www.wapforum.org/DTD/xhtml-mobile10.dtd'>
+{% load static %}
+  <html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta charset="UTF-8">
+    <title>FINISH</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% if user.is_authenticated %}
+<div align='right'>
+    <form name="logout" action="/logout/" method="post" accept-charset="utf-8" >
+         {% csrf_token %}
+    <button   type="submit" value="logout">LogOut</button>
+    </form>
+</div>
+<h1>NOW you are ready to play!!!!!</h1>
+<h1>your friend is Waiting for you</h1>
+<section class="loginform cf">
+    <form name="first_hint" action="/first_hint/" method="post" accept-charset="utf-8">
+        {% csrf_token %}
+        <ul>
+            <li><label for="password">Secret Friend </label>
+            <input type="password" id="password" name="first_hint" placeholder="password" required></li>
+            <li><input type="submit" value="first_hint"></li>
+        </ul>
+    </form>
+</section>
+
+<section class="loginform cf">
+    <form name="Total_Gifts" action="/firstApp/Total_Gifts/" method="post">
+        {% csrf_token %}
+        <ul>
+            <li><label for="Total_Gifts">Final Submission</label>
+            <input type="text" id="Total_Gifts" name="Friend_Name" placeholder="Enter your guessed Roll Number!!" required></li>
+            <li><label for="password_Gifts">you can submit it only once</label>
+            <input type="password" id="password_Gifts" name="password_Gifts" placeholder="password" required></li>
+            <li><input type="submit" value="submit"></li>
+        </ul>
+    </form>
+</section>
+
+</div>
+    <div align="center">
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+{% else %}
+<h1>Plz login first</h1>
+{% endif %}
+</body>
+</html>

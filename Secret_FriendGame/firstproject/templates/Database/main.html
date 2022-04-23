@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//WAPFORUM//DTD XHTML Mobile 1.0//EN'
+'http://www.wapforum.org/DTD/xhtml-mobile10.dtd'>
+{% load static %}
+  <html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+{% if user.is_authenticated %}
+<div align='right'>
+    <form name="logout" action="/logout/" method="post" accept-charset="utf-8" >
+         {% csrf_token %}
+   <li><button   type="submit" value="logout">LogOut</button></li>
+    </form>
+</div>
+
+<h1>Hello {{user.first_name}}!!!!</h1>
+
+<section class="loginform cf">
+    <form name="add_data" action="/firstApp/add_data/" method="post"  >
+        {% csrf_token %}
+        <ul>
+            <li><label for="hint1">You can submitt it</label>
+            <input type="text" id="hint1" name="hint1" placeholder="Hint1" required></li>
+            <li><label for="hint2">only once</label>
+            <input type="text" id="hint2" name="hint2" placeholder="Hint2" required></li>
+
+            <li><label for="best_m">Best Friend in boys</label>
+            <input type="text" id="best_m" name="best_M" placeholder="Enter his Roll number" required></li>
+            <li><label for="best_F">Best Friend in girls</label>
+            <input type="text" id="best_F" name="best_F" placeholder="Enter her Roll number" required></li>
+            <li><input type="submit" value="submit"></li>
+        </ul>
+    </form>
+</section>
+<section class="loginform cf">
+    <ul>
+<div align='right'>
+    <form name="jarvis" action="/jarvis/" method="get" accept-charset="utf-8" >
+         {% csrf_token %}
+   <li><button   type="submit" value="logout">Jarvis</button></li>
+    </form>
+</div>
+
+
+<div class=Center align='center'>
+    <form method="post">
+         {% csrf_token %}
+   <li><button  class='btn-bot' type="submit" formaction="">You can check Roll numbers Here if you Want!!!!</button></li>
+    </form>
+</div>
+
+
+<div align='left'>
+    <form name="secret_friend" action="/secret_friend/" method="get" accept-charset="utf-8" >
+         {% csrf_token %}
+   <li><button   type="submit" value="secret_friend">secret_friend</button></li>
+    </form>
+</div>
+    </ul>
+</section>
+    <div align="center">
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+{% else %}
+<h1>Plz login first</h1>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//WAPFORUM//DTD XHTML Mobile 1.0//EN' 
+'http://www.wapforum.org/DTD/xhtml-mobile10.dtd'> 
+{% load static %}
+  <html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <meta charset="UTF-8">
+    <title>LOGIN_PAGE</title>
+    <!-- demo scripts -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body id="bg" style="background-image">
+    <div align="center">
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+<section class="loginform cf">
+    <form name="login" action="" method="post" accept-charset="utf-8">
+        {% csrf_token %}
+        <ul>
+            <li><label for="usermail">Email</label>
+            <input type="text" id="usermail" name="username" placeholder="yourrollnumber" required></li>
+            <li><label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password" required></li>
+            <li>
+            <input type="submit" value="Login"></li>
+        </ul>
+    </form>
+</section>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>theme</title>
+         <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway|Ubuntu&display=swap" rel="stylesheet">
+          <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+
+<style>
+body{
+    background: url("{% static 'images/purty_wood.png'%}");
+    background-repeat:repeat ;
+    text-align:center;
+   font-family:'Nunito',serif;color:black;
+}
+
+@font-face {
+    font-family: 'Digital Num';
+    font-style: normal;
+    src: url(https://rawgit.com/GameDowload-lnc/Index/master/digital7.ttf);
+}
+@font-face {
+    font-family: 'Digital Num';
+    font-style: normal;
+    src: url(https://rawgit.com/GameDowload-lnc/Index/master/digital7.woff);
+}
+
+#slider, ul
+{
+    height: 200px;
+}
+
+#slider
+{
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #94f4f7;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
+    position: relative;
+    width: 340px;
+}
+
+#slider li
+{
+    float: left;
+    position: relative;
+    width: 350px;
+    /*display: inline-block;
+    margin-right: 1px;*/
+    height: 200px;
+}
+
+#slider ul
+{
+    list-style: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 9000px;
+    transition: left .3s linear;
+    -moz-transition: left .3s linear;
+    -o-transition: left .3s linear;
+    -webkit-transition: left .3s linear;
+    margin-left: -40px;
+    color: #666;
+}
+
+/*** Content ***/
+
+.slider-container
+{
+    margin: 0 auto;
+    padding-right: 10px;
+    width: 300px;
+  min-height: 180px;
+  border-bottom: 1px solid #ccc;
+}
+
+.slider-container img{
+    height:auto;
+    width:100%;
+}
+
+/*** target hooks ****/
+
+@-webkit-keyframes slide-animation {
+    0% {opacity:0;}
+    2% {opacity:1;}
+    20% {left:0px; opacity:1;}
+    22.5% {opacity:0.6;}
+    25% {left:-350px; opacity:1;}
+    45% {left:-350px; opacity:1;}
+    47.5% {opacity:0.6;}
+    50% {left:-700px; opacity:1;}
+    70% {left:-700px; opacity:1;}
+    72.5% {opacity:0.6;}
+    75% {left:-1050px; opacity:1;}
+    95% {opacity:1;}
+    98% {left:-1050px; opacity:0;}
+    100% {left:0px; opacity:0;}
+}
+
+#slider ul
+{
+    -webkit-animation: slide-animation 8s infinite;
+}
+
+
+#slider ul:hover
+{
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+
+#header{
+    font: 24px "Digital Num";
+    margin:5px;
+    border: 1.25px solid #000;
+ max-width:300px;
+    width: auto;
+    height: 100%;
+    padding:10px;
+    font-weight:bold;
+    color: #a00;
+    text-align: center;
+}
+#box{
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 8px;
+    font-family: "Digital Num";
+    max-width:450px;
+    width: auto;
+    height: 100%;
+    background:black;
+    position: relative;
+    margin:15px;
+    transform-style: inherit;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+}
+#header1{
+    font: 12px 'Nunito',serif;
+    margin:5px;
+    border: 0.5px solid #000;
+ max-width:300px;
+    width: auto;
+    height: 100%;
+    padding:10px;
+    font-weight:bold;
+    color: #000;
+    text-align: center;
+}
+.footer {
+    background: #222;
+    position: absolute;
+    width: 97%;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+    text-align: center;
+    font-size: 120%;
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
+    font-family: "Digital Num";
+}
+.footer a{
+    text-decoration:none;
+    color: #f5bfbf;
+}
+</style>
+    </head>
+
+<body>
+
+
+
+           <center> <div id="box">
+                <p style="font-size:1.2em;color: #a00"><b>THEME OF "SECRET FRIEND"</b></p>
+            </div>
+
+           <center> <p id="header">1. EXCITEMENT STARTS</p></center> </center>
+                            <center><b><p> In this stage,all participants will have to check their login credentials and feel the concept & enjoyments in the theme. We hope that the theme really makes you all very excitement.&#128293&#128293 </p></center>
+
+
+            <center><p id="header">2. THINK MORE</p></center>
+            <center><p>
+                In this stage,all should think hints uniquely about yourselves such as qualitys,nickname,moments,interests, passion, carrier etc and make them to feel crazy.This hints might be difficult to reach you...&#129300&#129300
+            </p></center>
+           <center><p>## BETTER HINT ->->->-> CRAZY FEEL ???</p></center>
+
+
+            <center><p id="header">3. CRAZY SUBMISSION</p></center>
+
+                           <center><p>After getting a secret code which will be helpful to submit your crazy hints,every individual will have to submit their lovely answers :: &#128517</p></center>
+
+
+
+            <center><p id="header">4. RANDOM HINT</p></center>
+
+                           <center><p>After succesful completion of stage 3,all will get a hint or clue which helps you to reveal about your secret friend.This may be called as the first chance or first hint.&#128519&#128519</p></center>
+
+
+
+            <center><p id="header">5. WISE--MORE WISE--MOST WISE</p></center>
+
+                           <center><p>It is the stage or time at which all the participants will have to connect or combine your logical ideas arrised from your first hint by having your lateral thinking approach and make a right path to achieve your secret friend....&#9203&#9200</p></center>
+
+
+
+            <center><p id="header">6. THRILL A CHALLENGE</p></center>
+
+                           <center><p>After the stage 5,everyone has to make one thrilling challenge (such as #tiktok,#cooking,#prank,#Be the real man,#dancing,#singing or any other) which will be given to your friend who feels you as their secret friend.
+Note:Acceptable or performable challenges only be considered.&#127916&#127909</p></center>
+
+
+
+            <center><p id="header">7. RIGHT TO ACCEPT</p></center>
+
+                           <center><p>After the successful submission of all thrilling challenges,everyone will get their challenge which will be made by your secret friend.##CHALLENGE ACCEPTED.&#128074&#128074</p></center>
+
+
+
+            <center><p id="header">8. SEE THE TRAGIDIES</p></center>
+
+                           <center><b><p>&#128076 It is the stage or time at which all will have to perform their accepted challenges which will provides an another hint about your secret friend.This stage really makes everyone with lots of fun and joy....&#128079&#128079</p></b></center>
+
+
+
+            <center><p id="header">9. IMPRESS WITH UR GENUINITY</p></center>
+
+                           <center><b><p>After the completion of stage 8,all will have to look onto their challenge which will be given to someone by yourselves in the stage 6.If you really feel that the given challenge was completed by someone,then submit a button with "COMPLETED".Otherwise,submit a button with "NOT COMPLETED".&#127879</p></b></center>
+
+
+
+            <center><p id="header">10. A SECOND CHANCE</p></center>
+
+                           <center><b><p>After the completion of all submissions at stage 9,a second hint or second chance will be provided to those who really performed the challenge given to you all in the stage 7.##CHALLENGE COMPLETED!!!</p></b></center>
+
+
+
+            <center><p id="header">11. LUCKY HINT</p></center>
+
+                           <center><b><p>&#129310 After the stage 10,a certain time will be provided to all similar to the stage 5.
+After this,a chance or hint or clue will be provided (by the organizers) to every individual to reveal their another hint called "LUCKY HINT" which was designed by the organizers.👨‍💻</p></b></center>
+
+
+
+            <center><p id="header">12. DARE TO REACH</p></center>
+
+                           <center><b><p>Hurray!!After getting all possible hints,it's time to dare on someone.Now,every participant will have to submit their answer(a friend which was found by you as ur secret friend).&#128102&#128105</p></b></center>
+
+
+
+            <center><p id="header">13. EXCITEMENT STOPS</p></center>
+
+                           <center><b><p>After a valid submission in stage 12,you will get a chance to see your secret friend's name which will stops your amazing excitement.If your answer was matched,then you will be rewarded by your secret friend.Otherwise, your secret friend will have to get a reward from you.&#127873&#127873</p></b></center>
+
+
+
+            <center><p id="header">14. MEMORIZEEE</p></center>
+
+                          <center><b><p>Everyone in the game may win or not be.But all will gather a lot of joyful memories or getting a chance to recall your memorable events with all your friends.&#128257&#128281</p>
+<p>Finally,everyone has to post their best memory with their secret friend.&#128233</p></b></center>
+
+
+
+<center><div id="box">
+                <p style="font-size:1.2em;color: #a00"><b>NOTE:</b></p> <p style="font-size:1.2em;font-family:'Nunito',serif;color: #fff"><b>On seeing it if you are feeling confused don't worry about it.Just enjoy the game! the secret santa will guides you step-wise</b></p>
+            </div></center>
+<center><p id="header1">For any problem identified, please contact the organizers.</p></center>
+<section>
+            <div id="slider">
+                <ul>
+                    <li>
+                        <div class="slider-container">
+                            <img src="https://www.dropbox.com/s/dn29kuw7cw9qki9/SRI_3177.jpg?dl=1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider-container">
+                            <img src="https://www.dropbox.com/s/5p7w81r6pj9xy7a/s1.jpeg?dl=1">
+                           </div>
+                    </li>
+                    <li>
+                        <div class="slider-container">
+                            <img src="https://www.dropbox.com/s/jdmbbdndzwt7lfd/IMG-20180211-WA0004.jpg?dl=1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider-container">
+                            <img src="https://www.dropbox.com/s/j733qy5mqtbrb7g/rn1.jpeg?dl=1">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </section>
+            <div class="footer">
+        <p>@ ECE-A [2016-20]</p>
+            </div>
+
+</body></html>

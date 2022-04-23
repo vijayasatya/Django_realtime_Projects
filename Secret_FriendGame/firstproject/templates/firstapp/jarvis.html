@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html lang="en">
+<head>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <title>FINISH</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% if user.is_authenticated %}
+<div align='right'>
+    <form name="logout" action="/logout/" method="post" accept-charset="utf-8" >
+     {% csrf_token %}
+    <button   type="submit" value="logout">LogOut</button>
+</form>
+</div>
+
+<img src="https://www.dropbox.com/s/biyv98joulw8yle/1588474299712.png?dl=1" class="center" display='block' margin-left='auto' margin-right='auto' width='50%' style="float: left;
+       clear:right; margin-right:10px; margin-bottom: 5px; padding:2px" />
+<p><br></p>
+<li>{{msg}}!!!!</li>
+<div align='right'>
+
+<section class="loginform cf">
+    <form name="jarvis" action="" method="post" accept-charset="utf-8">
+        {% csrf_token %}
+        <ul>
+            <li><label for="question_jarvis"></label>
+            <input type="text" name="question_jarvis" id="question_jarvis" placeholder="get your hint here!" required></li>
+            <li><input type="submit" value="Iron-Man"></li>
+        </ul>
+    </form>
+</section>
+
+</div>
+
+</div>
+    <div align="center">
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+{% else %}
+<h1>Plz login first</h1>
+{% endif %}
+
+</body>
+</html>

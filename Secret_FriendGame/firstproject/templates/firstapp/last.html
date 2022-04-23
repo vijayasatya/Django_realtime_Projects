@@ -1,0 +1,158 @@
+<html lang="en">
+{% load static %}
+<head>
+    <!link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway|Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <!-- demo scripts -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<style>
+@font-face {
+    font-family: 'Digital Num';
+    font-style: normal;
+    src: url(https://rawgit.com/GameDowload-lnc/Index/master/digital7.ttf);
+}
+@font-face {
+    font-family: 'Digital Num';
+    font-style: normal;
+    src: url(https://rawgit.com/GameDowload-lnc/Index/master/digital7.woff);
+}
+body{
+   background-image: url("{% static 'images/purty_wood.png'%}");
+    background-repeat:repeat ;
+    text-align:center;
+    /*background-color:black;*/
+   font-family:'Nunito',serif;color:black;
+}
+#header{
+    font: 24px "Digital Num";
+    margin:5px;
+    border:2.25px  solid black;
+    border-style: dashed;
+ max-width:200px;
+    width: auto;
+   /* height: 100%;*/
+    padding:10px;
+    font-weight:bold;
+    color: #a00;
+    text-align: center;
+}
+
+ .contact-flex
+    {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+     /* background-color: black;*/
+      padding: 10px 40px 10px 40px;
+      border-radius: 2px;
+      /*background: #131414;*/
+      box-shadow: inset 5px 5px 10px #0c0c0c,
+                  inset -5px -5px 10px #1a1c1c;
+             width:90vw;
+       margin-top:20px;
+    }
+    .contact-flex textarea
+    {
+      border: 0px;
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      border-radius:3px;
+      padding-left: 10px;
+    }
+    .contact-flex h4
+    {
+      color: white;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    ::placeholder
+    {
+      color: black;
+      font-family:'Nunito',serif;
+      color:#888888;
+    }
+    .contact-flex textarea
+    {
+      height: 100px;
+      padding-left: 10px;
+    }
+    .contact-flex input[type="submit"]
+    {
+      border: 0px;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-weight: bolder;
+      font-family: 'Nunito',sans-serif;
+      color:#a00;
+      text-transform: capitalize;
+           background: white;
+     box-shadow: inset 10px 10px 15px #080808,
+            inset -10px -10px 15px #1e2020;
+    }
+/*body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Digital Num";
+   font-weight:bold;
+  color: #777;
+}*/
+
+
+#box{
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 8px;
+    font-family: "Digital Num";
+    max-width:300px;
+    width: auto;
+    height: 30%;
+    background:black;
+    position: relative;
+    margin:15px;
+    transform-style: inherit;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+}
+
+</style>
+</head>
+<body>
+<center> <p id="header">MEMORIZEE !!</p></center>
+  <div align="center">
+            <h2 style="font-family:'Digital Num'">{% for message in messages %}
+        {{message}}
+        {% endfor %} <b></b> </h2>
+
+    </div>
+
+<center><div id="contact">
+    <div class="contact-flex">
+<h2 style="font-family:'Digital Num'"> <b>@ Best Memory in college days with your secret Friend</b> </h2>
+<form name="Feedback" action="/firstApp/Feedback/" method="post" accept-charset="utf-8" >
+    {% csrf_token %}
+<textarea placeholder="Best memory about ur secret friend" name="about"> </textarea>
+<h2 style="font-family:'Digital Num'"><b> @ Feedback</b> </h2>
+<textarea placeholder="feedback about the game" name="feedback"></textarea>
+            <input type="submit" name="submit">
+</form>
+          </div>
+</div></center>
+<center><h6><p><b>Thank u all for your participation in this game !!</b></p></h6></center>
+<center><div id="box">
+                <p style="font-size:1.4em;color: orange"><b>&copy; CONCEPT, DESIGNED AND DEVELOPED</p> <p style="font-size:1.2em;color: green"><b>By</b></p> <p style="font-size:1.2em;font-family:'Nunito',serif;color: silver"><b> Sai Krish, a PyThoN LoVEr</b></p><p style="font-size:1.2em;font-family:'Nunito',serif;color: silver"><b>HArSHa, a CHoClaTe LoVEr </b></p>
+            </div></center>
+<center><img style="height:30%;width:250px " src=https://media0.giphy.com/media/AWNxDbtHGIJDW/giphy.gif width="380px height="725px"></center>
+</body>
+</html>

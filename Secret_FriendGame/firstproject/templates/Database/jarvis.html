@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//WAPFORUM//DTD XHTML Mobile 1.0//EN'
+'http://www.wapforum.org/DTD/xhtml-mobile10.dtd'>
+{% load static %}
+  <html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <title>FINISH</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% if user.is_authenticated %}
+<li>{{msg}}!!!!</li>
+<div align='right'>
+    <form name="logout" action="/logout/" method="post" accept-charset="utf-8" >
+         {% csrf_token %}
+    <button   type="submit" value="logout">LogOut</button>
+    </form>
+
+<section class="loginform cf">
+    <form name="jarvis" action="" method="post" accept-charset="utf-8">
+        {% csrf_token %}
+        <ul>
+            <li><label for="question_jarvis"></label>
+            <input type="text" name="question_jarvis" id="question_jarvis" placeholder="Plz place your query here" required></li>
+            <li><input type="submit" value="Jarvis"></li>
+        </ul>
+    </form>
+</section>
+
+</div>
+
+</div>
+    <div align="center">
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+{% else %}
+<h1>Plz login first</h1>
+{% endif %}
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway|Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+<style>
+body{
+    background-repeat:repeat ;
+    text-align:center;
+   font-family:'Nunito',serif;color:black;
+}
+
+@font-face {
+    font-family: 'Digital Num';
+    font-style: normal;
+    src: url(https://rawgit.com/GameDowload-lnc/Index/master/digital7.ttf);
+}
+@font-face {
+    font-family: 'Digital Num';
+    font-style: normal;
+    src: url(https://rawgit.com/GameDowload-lnc/Index/master/digital7.woff);
+}
+
+
+/*** Content ***/
+
+
+
+#santa{
+    font: 24px "Digital Num";
+    margin:5px;
+    border: 1.25px solid #000;
+ max-width:300px;
+    width: auto;
+    height: 100%;
+    padding:10px;
+    font-weight:bold;
+    color: #a00;
+    text-align: center;
+}
+#header1{
+    font: 12px 'Nunito',serif;
+    margin:5px;
+    border: 0.5px solid #000;
+ max-width:300px;
+    width: auto;
+    height: 100%;
+    padding:10px;
+    font-weight:bold;
+    color: #000;
+    text-align: center;
+}
+</style>
+    </head>
+<body>
+{% if user.is_authenticated %}
+
+<div align='right'>
+    <form name="logout" action="/logout/" method="post" accept-charset="utf-8" >
+         {% csrf_token %}
+    <button   type="submit" value="logout">LogOut</button>
+    </form>
+</div>
+<img src="https://www.dropbox.com/s/8pgiguqwe90c0f7/1587897329961.png?dl=1"  display='block' margin-left='auto' margin-right='auto' width='50%'>
+<center><p id="santa">Hello {{user.first_name}} I am secret santa and I am here to help you</p></center>
+<center><p id="santa">But I am restricted to some rules by the programmer,Don't worry i will guide you if you follow them then you can get hints</p></center>
+<center><p id="santa">Before that i need the hints of you then only i am able to shuffle with others</p></center>
+<center><p id="santa">Be careful you can submmit your hints only once,so try to give great hints then the game is more interesting.</p></center>
+<center><p id="santa">you can also talk with my friend iron-man may be he is wiser than me but i am smarter!!!!</center>
+<center><p id="santa">Finally all the best and submit your hint before tues day 28 Apr 9:00 PM then after the submit form is closed &#127877;</p></center>
+</div>
+    <div align="center">
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+{% else %}
+<h1>Plz login first</h1>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <title></title>
+    <link rel="stylesheet" href="{% static '/css/style.css'%}">
+</head>
+<body>
+{% if user.is_authenticated %}
+<div align='right'>
+    <form name="logout" action="/logout/" method="post" accept-charset="utf-8" >
+         {% csrf_token %}
+    <button   type="submit" value="logout">LogOut</button>
+    </form>
+</div>
+
+<h1> Our Friends List:</h1>
+{% if emp_list%}
+<table>
+    <thead>
+    <th>Rollno</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>NAME</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>SECRET_FRIEND</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>GUESS</th>
+    {% for emp in emp_list %}
+    <tr>
+        <td>{{emp.Rollno}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{emp.First_name}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{emp.Secret_Friend}}</td>
+                <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{emp.guess}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{%else%}
+<p>NO record found</p>
+{% endif %}
+{% else %}
+<h1>Plz login first</h1>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//WAPFORUM//DTD XHTML Mobile 1.0//EN'
+'http://www.wapforum.org/DTD/xhtml-mobile10.dtd'>
+{% load static %}
+  <html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <!link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>LOGIN_PAGE</title>
+    <!-- demo scripts -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body id="bg" style="background-image">
+<h1>HOME PAGE WELCOME MOBILE</h1>
+<div class=Center align='center'>
+    <form>
+    <button  class='btn-bot' type="submit" formaction="firstApp/login">LOG IN</button>
+    </form>
+</div>
+    <div align="center">
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
