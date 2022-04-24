@@ -15,5 +15,10 @@
 
 #### Then finally we decided instead of looking for some other platform. We start building our own web platform using Django framework. We simply try to mimic the same secret friend concept for the simplicty and easily to access for everyone we design it with mobileview.
 
+#### we design,deploy and use the same webisite for playing this game. If you want you can explore by using below link, Sample credentials of mine Roll Number : 316177112032 & Password : whg8tlgd   
+
+[Link text Here](saikrish32.pythonanywhere.com)
+
+
 ![Alt Text](secret.jfif)
 
