@@ -13,7 +13,7 @@
 
 
 
-#### Then finally we decided instead of looking for some platform with the skills we have planned to design some custom website and we did it. when we are in school days most of us having idea we played that secret friend game and do some fun task and finally try to guess him at the end. we try to mimic the same using our djnago website for th simplicty we design it for mobileview.
+#### Then finally we decided instead of looking for some other platform. We start building our own web platform using Django framework. We simply try to mimic the same secret friend concept for the simplicty and easily to access for everyone we design it with mobileview.
 
 ![Alt Text](secret.jfif)
 
