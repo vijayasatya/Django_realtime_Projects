@@ -1,13 +1,17 @@
 # Secret Friend game
 
-#### We come up with this idea at the end of our bachelor technology in 2020 covid strikes badly and we are locked in a homes.
+<img src="https://secretfriendmusic.com/wp-content/uploads/secret-friend-name-570x172.png" >
 
-![Alt Text](https://c.tenor.com/ZWOZq7fsfesAAAAd/coronavirus-funny.gif)
+### **What is the secret friend game?**
+
+#### Normally in school days we play a game like A group comes together, everyone writes down their name on a piece of paper, and each participant draws a random name out of a box. You are the Secret friend for the person you draw. At the end of the game you write down a gift suggestion or two on a wish list and your Secret friend chooses a gift for you from that list. In the middle of the game everyone play some funny tasks and dares . Fianlly at the end you have to find your secret friend with some hints and puzzles.
 
 
-#### We felt bored and to have some fun with our friends start searching for some platforms where we can strike atleast some memories at the end. 
+#### We come up with this idea at the end of our bachelor technology in 2020 covid strikes badly and everyone got locked at a home. We felt bored and to have some fun with our friends start searching for some platforms where we have some fun and save some memories at the end. 
 
-![Alt Text](https://www.business2community.com/wp-content/uploads/2016/06/InternalSearch.jpg.jpg)
+<img src="https://c.tenor.com/ZWOZq7fsfesAAAAd/coronavirus-funny.gif" width="600" height="400">
+
+
 
 #### Then finally we decided instead of looking for some platform with the skills we have planned to design some custom website and we did it. when we are in school days most of us having idea we played that secret friend game and do some fun task and finally try to guess him at the end. we try to mimic the same using our djnago website for th simplicty we design it for mobileview.
 
