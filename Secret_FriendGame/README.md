@@ -9,7 +9,7 @@
 
 #### We come up with this idea at the end of our bachelor technology in 2020 covid strikes badly and everyone got locked at a home. We felt bored and to have some fun with our friends start searching for some platforms where we have some fun and save some memories at the end. 
 
-<img src="https://c.tenor.com/ZWOZq7fsfesAAAAd/coronavirus-funny.gif" width="600" height="400">
+<img src="https://c.tenor.com/ZWOZq7fsfesAAAAd/coronavirus-funny.gif" width="400" height="300">
 
 
 
