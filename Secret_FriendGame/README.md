@@ -17,7 +17,7 @@
 
 #### we design,deploy and use the same webisite for playing this game. If you want you can explore by using below link, Sample credentials of mine Roll Number : 316177112032 & Password : whg8tlgd   
 
-[Secret Friend](saikrish32.pythonanywhere.com)
+[Secret Friend](https://saikrish32.pythonanywhere.com)
 
 
 ![Alt Text](secret.jfif)
