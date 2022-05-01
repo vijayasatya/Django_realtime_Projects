@@ -11,9 +11,9 @@
 
 
 
-#### In this project first we start by collecting the sub urls of the base url by using the main.py(crawler) in the pre_processing folder and we terminate the process after getting required number of urls. Those collected urls are saved in crawled.txt file. Then at final stage of preprocessing we use Entire_Crawling_daily_basis.py to download htm files of those collected urls, convert those htm files to txt files, do data cleaning and at the attend create respective pickle files by getting the frequency of each keyword.
+#### In this project first i start by collecting the sub urls of the base url by using the main.py(crawler) in the pre_processing folder and we terminate the process after getting required number of urls. Those collected urls are saved in crawled.txt file. Then at final stage of preprocessing we use Entire_Crawling_daily_basis.py to download htm files of those collected urls, convert those htm files to txt files, do data cleaning and at the end i created respective dictionaries by getting the frequency of each keyword and finally save them in a pickle files.
 
-#### Design a website using flask for user interface demo. write python script to caliculate the tfidf scores of those documents based on the user's search keyword. We used those saved pickle files in the backend to get quick reponses. 
+#### Design a website using flask for user interface demo. write python script to caliculate the tfidf scores of those documents based on the user's search keyword. We used those saved pickle files in the backend to get quick reponses and show the related web search. 
 
 #### The results of my projecti i will add later
 
