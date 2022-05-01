@@ -15,7 +15,7 @@
 
 #### Design a website using flask for user interface demo. write python script to caliculate the tfidf scores of those documents based on the user's search keyword. We used those saved pickle files in the backend to get quick reponses. 
 
-#### The results of my projecti will add later
+#### The results of my projecti i will add later
 
 ![Alt Text](https://c.tenor.com/l2VFYv-iqUYAAAAM/kittycass-peachcat.gif)
 
