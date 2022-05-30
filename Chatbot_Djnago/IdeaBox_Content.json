@@ -1,0 +1,15 @@
+{
+    "userkey1":{
+        "frontendhtmlcode": "default",
+        "frontendcsscode" : "default",
+        "frontendjscode" : "default",
+        "backendcode" : "default"
+    },
+
+    "userkey2":{
+        "frontendhtmlcode": "default",
+        "frontendcsscode" : "default",
+        "frontendjscode" : "default",
+        "backendcode" : "default"
+    }
+}

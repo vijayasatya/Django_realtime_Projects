@@ -1,0 +1,1 @@
+"\nfrom django.urls import path\nfrom django.http import JsonResponse\nimport sys\nimport traceback\nfrom django.shortcuts import render,redirect\nurlpatterns = []\n#from .views import cross\n\n\n\n\n"
